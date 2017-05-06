@@ -237,6 +237,21 @@ header {
   text-align: center;
   color: white;
 }
+
+
+.grayarea {
+/*   margin: auto 5px;*/
+margin-top:200px;
+    width:100px;
+}
+.grayarea:hover{  
+    opacity: 0.25;
+     transition:0.5s;
+     color:darkgray;
+}
+
+
+
 header .intro-text {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -275,7 +290,7 @@ header .intro-text .intro-heading {
 }
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 300px;
+    padding-top: 20px;
     padding-bottom: 200px;
   }
   header .intro-text .intro-lead-in {
@@ -295,7 +310,56 @@ header .intro-text .intro-heading {
   }
 }
 section {
-  padding: 100px 0;
+  padding: 100px 0
+      ;
+}
+
+section#about{
+      background-color: gray;
+  background-image: -webkit-linear-gradient(30deg, white 50%, darkgray 50%);
+  min-height: 200px;
+}
+
+.hardware{
+    text-align: left;
+font-size: 35px;
+font-family: "Monsterrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+      font-weight: 700;
+    color:darkgray;
+}
+
+.hard{
+     list-style: none;
+        text-align: left;
+font-size: 15px;
+font-family: "Monsterrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+      font-weight: 500;
+    color:darkgray;
+    padding:5px;
+    
+}
+
+.soft {
+     list-style: none;
+    text-align:right;
+    font-size: 15px;
+font-family: "Monsterrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+      font-weight: 500;
+    color:white;
+        padding:5px;
+}
+
+
+.software{
+    text-align: right;
+font-size: 35px;
+font-family: "Monsterrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+      font-weight: 700;
+    color:white;
 }
 section h2.section-heading {
   font-size: 40px;
@@ -554,6 +618,25 @@ section h3.section-subheading {
     padding: 0 100px 20px 20px;
   }
 }
+
+	
+For this sort of thing you could use pseudo selectors such as :before or :after in your CSS to minimize on unnecessary HTML markup.
+
+HTML:
+
+<div id="container"></div>
+CSS:
+
+
+/*
+#about {
+  background-color: gray;
+  background-image: -webkit-linear-gradient(30deg, red 50%, blue 50%);
+  min-height: 200px;
+}
+*/
+
+
 .team-member {
   text-align: center;
   margin-bottom: 50px;
